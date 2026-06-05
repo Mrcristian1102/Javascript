@@ -1,0 +1,85 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Administrador",
+      "email": "admin@test.com",
+      "password": "Admin123*",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Juan Pérez",
+      "email": "user1@test.com",
+      "password": "User123*",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "name": "María García",
+      "email": "user2@test.com",
+      "password": "User123*",
+      "role": "user"
+    }
+  ],
+  "spaces": [
+    {
+      "id": 1,
+      "name": "Sala Alfa",
+      "type": "Sala de reuniones",
+      "capacity": 10,
+      "location": "Piso 2",
+      "status": "available"
+    },
+    {
+      "id": 2,
+      "name": "Oficina 101",
+      "type": "Oficina privada",
+      "capacity": 4,
+      "location": "Piso 1",
+      "status": "available"
+    },
+    {
+      "id": 3,
+      "name": "Coworking Abierto",
+      "type": "Coworking",
+      "capacity": 20,
+      "location": "Piso 3",
+      "status": "available"
+    },
+    {
+      "id": 4,
+      "name": "Auditorio Principal",
+      "type": "Auditorio",
+      "capacity": 100,
+      "location": "Piso 1",
+      "status": "available"
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "userId": 2,
+      "userName": "Juan Pérez",
+      "spaceId": 1,
+      "spaceName": "Sala Alfa",
+      "date": "2026-06-10",
+      "startTime": "09:00",
+      "endTime": "11:00",
+      "reason": "Reunión de equipo",
+      "status": "approved"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "userName": "María García",
+      "spaceId": 2,
+      "spaceName": "Oficina 101",
+      "date": "2026-06-11",
+      "startTime": "14:00",
+      "endTime": "16:00",
+      "reason": "Trabajo concentrado",
+      "status": "approved"
+    }
+  ]
+}
